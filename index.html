@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Ans Javed - AI & Generative AI Engineer Portfolio</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Lucide Icons for aesthetic and simple vector graphics -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <style>
+        /* Custom font and base styles */
+        body { font-family: 'Inter', sans-serif; }
+        /* Style for the active navigation link (handled by JS) */
+        .nav-active { @apply text-teal-400 font-semibold; }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'gray-950': '#0a0a0a',
+                        'teal-550': '#0d9488',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-950 text-gray-300 antialiased selection:bg-teal-500 selection:text-white">
+
+    <!-- Header & Navigation (Sticky) -->
+    <header class="sticky top-0 z-50 bg-gray-950/95 backdrop-blur-sm shadow-xl shadow-gray-900/50 border-b border-gray-800">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-extrabold text-teal-400 hover:text-teal-300 transition-colors">Ans Javed</a>
+            <div class="space-x-4 flex items-center">
+                <a href="#summary" class="nav-link hover:text-white transition-colors text-sm md:text-base">Summary</a>
+                <a href="#projects" class="nav-link hover:text-white transition-colors text-sm md:text-base">Projects</a>
+                <a href="#skills" class="nav-link hover:text-white transition-colors text-sm md:text-base">Skills</a>
+                <a href="#contact" class="nav-link hover:text-white transition-colors text-sm md:text-base">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-24">
+
+        <!-- 🚀 Hero Section (Summary) -->
+        <section id="summary" class="min-h-[80vh] flex flex-col justify-center text-center lg:text-left pt-10 pb-16">
+            <p class="text-lg font-medium text-teal-400 mb-2">Hello, I'm</p>
+            <h1 class="text-5xl sm:text-7xl font-extrabold text-white mb-4 leading-tight">
+                Muhammad Ans Javed
+            </h1>
+            <p class="text-2xl sm:text-3xl font-semibold text-gray-200 mb-6">
+                AI & Generative AI Engineer
+            </p>
+            <p class="max-w-4xl text-xl text-gray-400 mb-10 mx-auto lg:mx-0">
+                **AI & Generative AI Engineer** with hands-on experience in Large Language Models (LLMs), RAG architectures, and LLM application deployment. Skilled in **Python, LangChain, and FastAPI/Flask** for building scalable, context-aware AI systems. Passionate about prompt optimization, retrieval pipelines, and structured reasoning for robust GenAI solutions.
+            </p>
+            <div class="flex flex-wrap justify-center lg:justify-start gap-6">
+                <a href="#projects" class="inline-flex items-center space-x-2 bg-teal-550 hover:bg-teal-600 text-white font-bold py-3 px-6 rounded-lg text-lg transition-all shadow-xl shadow-teal-500/20 transform hover:scale-[1.02]">
+                    <span data-lucide="brain-circuit" class="w-5 h-5"></span>
+                    <span>View Projects</span>
+                </a>
+                <a href="mailto:ansjaved.official@gmail.com" class="inline-flex items-center space-x-2 border border-gray-700 hover:border-teal-500 text-gray-300 hover:text-teal-400 font-semibold py-3 px-6 rounded-lg text-lg transition-all">
+                    <span data-lucide="mail" class="w-5 h-5"></span>
+                    <span>Contact Me</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- --- -->
+
+        <!-- 💡 Projects Section -->
+        <section id="projects" class="py-16 md:py-24">
+            <h2 class="text-4xl font-bold text-white mb-10 border-b-4 border-teal-500/50 pb-3">
+                <span data-lucide="folder-kanban" class="inline-block w-8 h-8 mr-2 align-top"></span> Key Projects
+            </h2>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Project Card 1: AI Translation API -->
+                <div class="bg-gray-900 p-6 rounded-xl border border-gray-800 shadow-lg hover:border-teal-550 transition-all">
+                    <h3 class="text-2xl font-semibold text-teal-400 mb-2 flex items-center">
+                        <span data-lucide="languages" class="w-5 h-5 mr-2"></span> AI Translation API
+                    </h3>
+                    <p class="text-gray-400 mb-4">Engineered a multilingual translation system using **LangChain and Gemini (via OpenRouter)**. Optimized prompts and caching to enhance translation consistency and **improve inference speed by 30%**. Deployed via FastAPI for seamless integration and scalability.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="tag-badge">LangChain</span>
+                        <span class="tag-badge">FastAPI</span>
+                        <span class="tag-badge">LLMs (Gemini)</span>
+                    </div>
+                </div>
+
+                <!-- Project Card 2: Context-Aware Chatbot -->
+                <div class="bg-gray-900 p-6 rounded-xl border border-gray-800 shadow-lg hover:border-teal-550 transition-all">
+                    <h3 class="text-2xl font-semibold text-teal-400 mb-2 flex items-center">
+                        <span data-lucide="bot" class="w-5 h-5 mr-2"></span> Context-Aware Chatbot
+                    </h3>
+                    <p class="text-gray-400 mb-4">Built a retrieval-augmented chatbot supporting multi-turn, context-aware dialogue. Integrated the OpenAI API with **LangGraph and Chroma** for intelligent retrieval and persistent memory, ensuring high conversational fidelity.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="tag-badge">LangGraph</span>
+                        <span class="tag-badge">Chroma</span>
+                        <span class="tag-badge">RAG</span>
+                    </div>
+                </div>
+                
+                <!-- Project Card 3: Advanced LLM Chains -->
+                <div class="bg-gray-900 p-6 rounded-xl border border-gray-800 shadow-lg hover:border-teal-550 transition-all">
+                    <h3 class="text-2xl font-semibold text-teal-400 mb-2 flex items-center">
+                        <span data-lucide="workflow" class="w-5 h-5 mr-2"></span> Advanced LLM Chains
+                    </h3>
+                    <p class="text-gray-400 mb-4">Designed modular **LangChain Runnables (Parallel, Branch, Sequence)** for structured reasoning workflows. Improved schema adherence by **40%** through Pydantic-based validation and robust multi-model parsing for reliable output.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="tag-badge">LangChain Runnables</span>
+                        <span class="tag-badge">Pydantic</span>
+                        <span class="tag-badge">Structured Output</span>
+                    </div>
+                </div>
+                
+                <!-- Project Card 4: Full-Stack Sentiment Analysis App -->
+                <div class="bg-gray-900 p-6 rounded-xl border border-gray-800 shadow-lg hover:border-teal-550 transition-all">
+                    <h3 class="text-2xl font-semibold text-teal-400 mb-2 flex items-center">
+                        <span data-lucide="area-chart" class="w-5 h-5 mr-2"></span> Full-Stack Sentiment Analysis App
+                    </h3>
+                    <p class="text-gray-400 mb-4">Engineered a **Flask-based web app** for movie reviews sentiment analysis using LSTM and Logistic Regression models. Enhanced model accuracy by **12%** and developed an admin dashboard for retraining and analytics visualization.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="tag-badge">Flask</span>
+                        <span class="tag-badge">LSTM</span>
+                        <span class="tag-badge">Full-Stack Development</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Tailwind Style for Tags -->
+            <style>
+                .tag-badge {
+                    @apply inline-block bg-teal-900/50 text-teal-300 text-xs font-medium px-3 py-1 rounded-full border border-teal-800;
+                }
+            </style>
+        </section>
+
+        <!-- --- -->
+
+        <!-- 🛠️ Skills Section -->
+        <section id="skills" class="py-16 md:py-24">
+            <h2 class="text-4xl font-bold text-white mb-10 border-b-4 border-teal-500/50 pb-3">
+                <span data-lucide="puzzle" class="inline-block w-8 h-8 mr-2 align-top"></span> Technical & Core Skills
+            </h2>
+            
+            <!-- Organized Skills Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <!-- Group 1: GenAI & LLM Stack -->
+                <div class="bg-gray-900 p-5 rounded-xl border border-teal-500/20 shadow-lg">
+                    <h3 class="text-xl font-bold text-teal-400 mb-4 flex items-center">
+                        <span data-lucide="lightbulb" class="w-5 h-5 mr-2"></span> GenAI & LLM Stack
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-pill">LangChain</span>
+                        <span class="skill-pill">LangGraph</span>
+                        <span class="skill-pill">RAG Systems</span>
+                        <span class="skill-pill">Vector DBs</span>
+                        <span class="skill-pill">Prompt Eng.</span>
+                        <span class="skill-pill">Tools and Agents</span>
+                        <span class="skill-pill">LLM Integration</span>
+                    </div>
+                </div>
+
+                <!-- Group 2: Programming & Deployment -->
+                <div class="bg-gray-900 p-5 rounded-xl border border-teal-500/20 shadow-lg">
+                    <h3 class="text-xl font-bold text-teal-400 mb-4 flex items-center">
+                        <span data-lucide="code" class="w-5 h-5 mr-2"></span> Programming & Deployment
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-pill">Python</span>
+                        <span class="skill-pill">FastAPI</span>
+                        <span class="skill-pill">Flask</span>
+                    </div>
+                </div>
+                
+                <!-- Group 3: ML & Data Science -->
+                <div class="bg-gray-900 p-5 rounded-xl border border-teal-500/20 shadow-lg">
+                    <h3 class="text-xl font-bold text-teal-400 mb-4 flex items-center">
+                        <span data-lucide="line-chart" class="w-5 h-5 mr-2"></span> ML & Data Science
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-pill">TensorFlow</span>
+                        <span class="skill-pill">Scikit-learn</span>
+                        <span class="skill-pill">Pandas/NumPy</span>
+                        <span class="skill-pill">NLP</span>
+                    </div>
+                </div>
+
+                <!-- Group 4: Core Competencies -->
+                <div class="bg-gray-900 p-5 rounded-xl border border-gray-700 shadow-lg">
+                    <h3 class="text-xl font-bold text-gray-300 mb-4 flex items-center">
+                        <span data-lucide="user-check" class="w-5 h-5 mr-2"></span> Core Competencies
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-pill-core">Problem-Solving</span>
+                        <span class="skill-pill-core">Communication</span>
+                        <span class="skill-pill-core">Attention to Detail</span>
+                        <span class="skill-pill-core">Critical Thinking</span>
+                        <span class="skill-pill-core">Adaptability</span>
+                        <span class="skill-pill-core">Collaboration</span>
+                    </div>
+                </div>
+
+            </div>
+            <!-- End Organized Skills Grid -->
+
+            <!-- Tailwind Styles for Skill Pills -->
+            <style>
+                .skill-pill {
+                    @apply bg-teal-900/40 text-teal-300 px-3 py-1 text-sm rounded-full font-medium border border-teal-800 hover:bg-teal-800/60 transition-colors cursor-default;
+                }
+                .skill-pill-core {
+                    @apply bg-gray-800 text-gray-400 px-3 py-1 text-sm rounded-full font-medium border border-gray-700 hover:bg-gray-700/60 transition-colors cursor-default;
+                }
+            </style>
+        </section>
+
+        <!-- --- -->
+
+        <!-- 🎓 Education & Certifications -->
+        <section id="education" class="py-16 md:py-24">
+            <h2 class="text-4xl font-bold text-white mb-10 border-b-4 border-teal-500/50 pb-3">
+                <span data-lucide="graduation-cap" class="inline-block w-8 h-8 mr-2 align-top"></span> Education & Certifications
+            </h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Education -->
+                <div class="bg-gray-900 p-6 rounded-xl border border-gray-800 shadow-xl">
+                    <h3 class="text-2xl font-semibold text-teal-400 mb-1">Bachelor of Science in Computer Science (BSCS)</h3>
+                    <p class="text-lg font-medium text-gray-300">Virtual University of Pakistan</p>
+                    <p class="text-gray-500 mt-1">Lahore, Pakistan</p>
+                </div>
+                <!-- Certifications -->
+                <div class="bg-gray-900 p-6 rounded-xl border border-gray-800 shadow-xl space-y-4">
+                    <h3 class="text-2xl font-semibold text-teal-400 mb-2">Certifications</h3>
+                    <div>
+                        <p class="text-lg font-medium text-gray-300">Advanced Python</p>
+                        <p class="text-gray-500">NAVTTC, Government of Pakistan (Covers OOP, API Design, and GenAI)</p>
+                    </div>
+                    <div>
+                        <p class="text-lg font-medium text-gray-300">CCNA</p>
+                        <p class="text-gray-500">Cisco Certified Network Associate (Networking and Systems Fundamentals)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- --- -->
+
+        <!-- 📧 Contact Section -->
+        <section id="contact" class="py-16 md:py-24 text-center border-t border-gray-800">
+            <h2 class="text-4xl font-bold text-white mb-6">Let's Build Something Great Together.</h2>
+            <p class="text-xl text-gray-400 mb-10 max-w-3xl mx-auto">
+                I'm actively seeking new challenges in AI, LLMs, and Generative AI application development. Feel free to reach out to discuss opportunities or collaborations.
+            </p>
+            
+            <a href="mailto:ansjaved.official@gmail.com" class="inline-flex items-center space-x-2 bg-teal-550 hover:bg-teal-600 text-white font-bold py-4 px-10 rounded-xl text-xl transition-all shadow-2xl shadow-teal-500/30">
+                <span data-lucide="send" class="w-6 h-6"></span>
+                <span>Send a Message</span>
+            </a>
+
+            <div class="mt-8 flex justify-center space-x-6">
+                <a href="https://linkedin.com/in/mhmdansjaved" target="_blank" class="text-gray-400 hover:text-teal-400 transition-colors" aria-label="LinkedIn Profile">
+                    <span data-lucide="linkedin" class="w-8 h-8"></span>
+                </a>
+                <a href="https://github.com/mhmdans" target="_blank" class="text-gray-400 hover:text-teal-400 transition-colors" aria-label="GitHub Profile">
+                    <span data-lucide="github" class="w-8 h-8"></span>
+                </a>
+                <!-- 
+                    NOTE ON RESUME DOWNLOAD FIX: 
+                    The 'couldn't access' error occurs because the browser cannot find the PDF file 
+                    ('MuhammadAnsJavedResume (2).pdf') on the deployed server.
+                    
+                    You have two solutions:
+                    1. (Easiest) Manually upload the PDF file (MuhammadAnsJavedResume (2).pdf) to the same directory 
+                       as your index.html file in your GitHub repository.
+                    2. (Single-file solution) Convert your PDF to a Base64 string and replace the 'href' value 
+                       with the resulting data URI (e.g., href="data:application/pdf;base64,..."). This embeds 
+                       the resume directly into the HTML file.
+                -->
+                <a href="MuhammadAnsJavedResume (2).pdf" download class="text-gray-400 hover:text-teal-400 transition-colors" aria-label="Download Resume">
+                    <span data-lucide="file-text" class="w-8 h-8"></span>
+                </a>
+            </div>
+            
+        </section>
+        
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-gray-800 py-6 mt-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-gray-500 text-sm">
+            <p>&copy; 2025 Muhammad Ans Javed. Engineered with Python and Built with Tailwind CSS.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Interactivity -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Initialize Lucide icons
+            lucide.createIcons();
+
+            const navLinks = document.querySelectorAll('.nav-link');
+            const sections = document.querySelectorAll('section');
+
+            // Set the first link as active by default
+            const firstLink = document.querySelector('a[href="#summary"]');
+            if (firstLink) firstLink.classList.add('nav-active');
+
+            // Intersection Observer for active navigation highlighting
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const currentSectionId = entry.target.id;
+                        navLinks.forEach(link => {
+                            link.classList.remove('nav-active', 'text-teal-400', 'font-semibold');
+                            if (link.getAttribute('href').substring(1) === currentSectionId) {
+                                link.classList.add('nav-active', 'text-teal-400', 'font-semibold');
+                            }
+                        });
+                    }
+                });
+            }, {
+                // Root is the viewport
+                rootMargin: '-20% 0px -75% 0px', // When the section is 20% down from the top
+                threshold: 0 // Observe as soon as any part of the section enters
+            });
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+
+        });
+    </script>
+</body>
+</html>
